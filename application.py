@@ -1,4 +1,4 @@
-from flask import Flask, render_template, for_url
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
