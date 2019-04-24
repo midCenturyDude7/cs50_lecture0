@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    headline = "Hello, world!"
+    headline = "Working with Flask and Python to develop a web application"
     return render_template("index.html", headline=headline)
 
 @app.route("/<string:name>")
