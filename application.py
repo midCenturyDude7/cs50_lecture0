@@ -4,9 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Hello World!"
+    headline = "Hello, world!"
+    return render_template("index.html", headline=headline)
 
 @app.route("/<string:name>")
 def hello (name):
     name = name.capitalize()
     return f"Hello {name}!"
+
